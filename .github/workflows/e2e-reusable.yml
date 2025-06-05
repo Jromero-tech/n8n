@@ -20,7 +20,7 @@ on:
       run-env:
         description: 'Node env version to run tests with.'
         required: false
-        default: 'browsers:node18.12.0-chrome107'
+        default: 'browsers:node20.15.0-chrome107'
         type: string
       record:
         description: 'Record test run.'

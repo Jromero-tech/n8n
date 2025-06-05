@@ -45,7 +45,7 @@ jobs:
       - name: Setup Environment and Build Project
         uses: ./.github/actions/setup-and-build
         with:
-          node-version: '22.x'
+          node-version: '20.x'
           cache-suffix: 'workflow-test'
 
       - name: Install OS dependencies
