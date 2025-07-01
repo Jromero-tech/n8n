@@ -15,10 +15,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
+    volumes
       - ..:/workspaces:cached
     command: sleep infinity
     environment:
-      DB_POSTGRESDB_HOST: postgres
-      DB_TYPE: postgresdb
-      DB_POSTGRESDB_PASSWORD: password
+     environment:
+  - N8N_HOST=n8n.edgeai.ar
+  - N8N_PORT=5678
+  - N8N_PROTOCOL=https
+  - WEBHOOK_URL=https://n8n.edgeai.ar/
+
